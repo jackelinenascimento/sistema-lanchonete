@@ -1,29 +1,24 @@
 package lanchonete;
 
-public class Lanche {
+public abstract class Lanche {
 	
-	double preco;
-	int tempoPreparo;
-
+	private double preco;
 	
-	public int getTempoPreparo() {
-		return tempoPreparo;
-	}
-
-	public void setTempoPreparo(int tempoPreparo) {
-		this.tempoPreparo = tempoPreparo;
+	public Lanche() {}
+	
+	public Lanche(double preco) {
+		this.setPreco(preco);
 	}
 
 	public double getPreco() {
 		return preco;
 	}
-	
+
 	public void setPreco(double preco) {
 		this.preco = preco;
 	}
 	
-	public void calculaTempo(int distancia) {
-	
+	public double tempo(double distancia) {
+		return distancia * 10;
 	}
-
 }
