@@ -1,4 +1,4 @@
-package lanches;
+package lanchonete;
 
 public class Principal {
 

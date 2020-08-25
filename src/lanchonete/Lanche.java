@@ -1,9 +1,19 @@
-package lanches;
+package lanchonete;
 
 public class Lanche {
 	
 	double preco;
+	int tempoPreparo;
+
 	
+	public int getTempoPreparo() {
+		return tempoPreparo;
+	}
+
+	public void setTempoPreparo(int tempoPreparo) {
+		this.tempoPreparo = tempoPreparo;
+	}
+
 	public double getPreco() {
 		return preco;
 	}
