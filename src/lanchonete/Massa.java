@@ -1,23 +1,33 @@
 package lanchonete;
 
 public class Massa extends Lanche{
-	String molho;
-	String[] tipos = {"macarrao", "pizza", "lasanha"};
 	
-	public String[] getTipos() {
-		return tipos;
+	private String molho;
+	private TiposMassa tipo;
+	
+	public Massa() {
+		super();
 	}
-
-	public void setTipos(String[] tipos) {
-		this.tipos = tipos;
+	public Massa(Double preco, String molho, TiposMassa tipo) {
+		super(preco);
+		this.molho = molho;
+		this.tipo = tipo;
 	}
-
 	public String getMolho() {
 		return molho;
 	}
-
 	public void setMolho(String molho) {
 		this.molho = molho;
 	}
+	public TiposMassa getTipo() {
+		return tipo;
+	}
+	public void setTipo(TiposMassa tipo) {
+		this.tipo = tipo;
+	}
 	
+	@Override
+	public double tempo(double distancia) {
+		return 30 + super.tempo(distancia);		
+	}
 }

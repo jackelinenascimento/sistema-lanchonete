@@ -7,7 +7,7 @@ public abstract class Lanche {
 	public Lanche() {}
 	
 	public Lanche(double preco) {
-		this.setPreco(preco);
+		this.preco = preco;
 	}
 
 	public double getPreco() {
